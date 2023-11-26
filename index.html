@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script></script>
+    <title>SpotifyApp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="icon">
+                <img src="img/vinyl-icon.png" alt="vinyl" class="img-icon">
+            </div>
+            <div id="controls">
+                <img src="img/previous-button.png" alt="previous" class="img-btn" onclick="previous()">
+                <img src="img/play-button.png" alt="play" class="img-btn" onclick="play()">
+                <img src="img/pause-button.png" alt="pause" class="img-btn" onclick="pause()">
+                <img src="img/stop-button.png" alt="stop" class="img-btn">
+                <img src="img/next-button.png" alt="next" class="img-btn" onclick="next()">
+            </div>
+            <div>
+                <label for="playlists" class="form-label">Playlists</label>
+                <select id="playlists" class="form-control" onchange="fetchTracks()"></select>
+            </div>
+            <div>
+                <ul id="tracks" class="form-control"></ul>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
